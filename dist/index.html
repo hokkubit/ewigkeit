@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewighkeit</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans+Condensed:wght@300&display&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Ewighkeit</h1>
+        <div></div>
+    </header>
+    <!-- bg -->
+    <div class="background" id="background-fill"></div>
+    <div class="mosaic-animation-boxes" id="mosaic-animation-boxes"></div>
+    <!-- nav-menu -->
+    <nav class="nav-menu" id="nav-menu">
+        <a href="#" class="nav-menu__block" data-easing="easeOutBack">
+            <span name="galery"><strong>G</strong>алерея</span>
+        </a>
+        <a href="#" class="nav-menu__block" id="second" data-easing="easeInExpo">
+            <span name="media"><strong>M</strong>едиа</span>
+        </a>
+        <a href="#" class="nav-menu__block" id="third" data-easing="easeInExpo">
+            <span name="contacts"><strong>K</strong>онтакты</span>
+        </a>
+    </nav>
+    <main id="content-wrapper" class="content-wrapper">
+        <span class="content__close"></span>
+        <section class="content">
+            <ul class="portfolio__sort">
+                <li><a href="#" data-group="all" class="active">All</a>
+                </li>
+                <li><a href="#" data-group="portrait">Portrait</a>
+                </li>
+                <li><a href="#" data-group="polar">Polaroid</a>
+                </li>
+                <li><a href="#" data-group="animal">Animal</a>
+                </li>
+                <li><a href="#" data-group="arch">Architect</a>
+                </li>
+                <li><a href="#" data-group="modern">Modern</a>
+                </li>
+            </ul>
+            <div class="content__inner">
+                <ul class="portfolio__imagelist" id="portfolio__imagelist">
+                    <div class="sizer"></div>
+                    <li class="show" data-groups='["modern", "arch"]'><img src="images/small/1.jpg" alt="image1" data-bgimg="images/image1.jpg" data-profile="cover" data-text="Photo by Kir Simakov on Unsplash" /></li>
+                    <li class="show" data-groups='["arch"]'><img src="images/small/2.jpg" alt="image2" data-bgimg="images/image2.jpg" data-profile="cover" data-text="Photo by Oleg Andriukevych on Unsplash" /></li>
+                    <li class="show" data-groups='["animal"]'><img src="images/small/3.jpg" alt="image3" data-bgimg="images/image3.jpg" data-profile="cover" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod" /></li>
+                    <li class="show" data-groups='["modern"]'><img src="images/small/4.jpg" alt="image4" data-bgimg="images/image4.jpg" data-profile="cover" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod" /></li>
+                    <li class="show" data-groups='["polar"]'><img src="images/small/5.jpg" alt="image5" data-bgimg="images/image5.jpg" data-profile="cover" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod" /></li>
+                    <li class="show" data-groups='["portrait"]'><img src="images/small/6.jpg" alt="image6" data-bgimg="images/image6.jpg" data-profile="cover" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod" /></li>
+                    <li class="show" data-groups='["polar"]'><img src="images/small/6.1.jpg" alt="image6" data-bgimg="images/image6.1.jpg" data-profile="photocard" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod" /></li>
+                    <li class="show" data-groups='["modern"]'><img src="images/small/7.jpg" alt="image7" data-bgimg="images/image7.jpg" data-profile="cover" data-text="Lorem ipsum dolor sit amet, consec" /></li>
+                    <li class="show" data-groups='["animal"]'><img src="images/small/8.jpg" alt="image8" data-bgimg="images/image8.jpg" data-profile="cover" data-text="Photo by freddie marriage on Unsplash" /></li>
+                    <li class="show" data-groups='["animal"]'><img src="images/small/9.jpg" alt="image1" data-bgimg="images/image9.jpg" data-profile="cover" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod" /></li>
+                    <li class="show" data-groups='["modern"]'><img src="images/small/10.jpg" alt="image1" data-bgimg="images/image10.jpg" data-profile="cover" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod" /></li>
+                    <li class="show" data-groups='["polar"]'><img src="images/small/11.jpg" alt="image1" data-bgimg="images/image11.jpg" data-profile="photocard" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod" /></li>
+                    <li class="show" data-groups='["animal"]'><img src="images/small/12.jpg" alt="image1" data-bgimg="images/image12.jpg" data-profile="cover" data-text="by Frederik Trovatten on Unsplash" /></li>
+                </ul>
+            </div>
+        </section>
+        <section class="content">
+            <ul class="portfolio__media">
+                <li class="show_video"><iframe width="540" height="315" src="https://www.youtube.com/embed/u8LBIFEMJ9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li class="show_video"><iframe width="540" height="315" src="https://www.youtube.com/embed/4V6pV40RF9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li class="show_video"><iframe width="540" height="315" src="https://www.youtube.com/embed/4V6pV40RF9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            </ul>
+        </section>
+        <section class="content">
+            <!-- <h2 class="section title"><strong>K</strong>онтакты</h2> -->
+            <div class="social__inner">
+                <figure class="social__profile">
+                    <img src="images/miss-zhang-jz0xIgcwyL0-unsplash.jpg" alt="sampl45" />
+                    <figcaption>
+                        <h2>John <span>Doe</span></h2>
+                        <p>Carry the moments</p>
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+                <ul class="social">
+                    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <symbol id="icon-vk" viewBox="0 0 31 28">
+                                <path d="M29.953 8.125c0.234 0.641-0.5 2.141-2.344 4.594-3.031 4.031-3.359 3.656-0.859 5.984 2.406 2.234 2.906 3.313 2.984 3.453 0 0 1 1.75-1.109 1.766l-4 0.063c-0.859 0.172-2-0.609-2-0.609-1.5-1.031-2.906-3.703-4-3.359 0 0-1.125 0.359-1.094 2.766 0.016 0.516-0.234 0.797-0.234 0.797s-0.281 0.297-0.828 0.344h-1.797c-3.953 0.25-7.438-3.391-7.438-3.391s-3.813-3.938-7.156-11.797c-0.219-0.516 0.016-0.766 0.016-0.766s0.234-0.297 0.891-0.297l4.281-0.031c0.406 0.063 0.688 0.281 0.688 0.281s0.25 0.172 0.375 0.5c0.703 1.75 1.609 3.344 1.609 3.344 1.563 3.219 2.625 3.766 3.234 3.437 0 0 0.797-0.484 0.625-4.375-0.063-1.406-0.453-2.047-0.453-2.047-0.359-0.484-1.031-0.625-1.328-0.672-0.234-0.031 0.156-0.594 0.672-0.844 0.766-0.375 2.125-0.391 3.734-0.375 1.266 0.016 1.625 0.094 2.109 0.203 1.484 0.359 0.984 1.734 0.984 5.047 0 1.062-0.203 2.547 0.562 3.031 0.328 0.219 1.141 0.031 3.141-3.375 0 0 0.938-1.625 1.672-3.516 0.125-0.344 0.391-0.484 0.391-0.484s0.25-0.141 0.594-0.094l4.5-0.031c1.359-0.172 1.578 0.453 1.578 0.453z"></path>
+                            </symbol>
+                            <symbol id="icon-instagram" viewBox="0 0 24 28">
+                                <path d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM18.156 14c0 3.406-2.75 6.156-6.156 6.156s-6.156-2.75-6.156-6.156 2.75-6.156 6.156-6.156 6.156 2.75 6.156 6.156zM19.844 7.594c0 0.797-0.641 1.437-1.437 1.437s-1.437-0.641-1.437-1.437 0.641-1.437 1.437-1.437 1.437 0.641 1.437 1.437zM12 4.156c-1.75 0-5.5-0.141-7.078 0.484-0.547 0.219-0.953 0.484-1.375 0.906s-0.688 0.828-0.906 1.375c-0.625 1.578-0.484 5.328-0.484 7.078s-0.141 5.5 0.484 7.078c0.219 0.547 0.484 0.953 0.906 1.375s0.828 0.688 1.375 0.906c1.578 0.625 5.328 0.484 7.078 0.484s5.5 0.141 7.078-0.484c0.547-0.219 0.953-0.484 1.375-0.906s0.688-0.828 0.906-1.375c0.625-1.578 0.484-5.328 0.484-7.078s0.141-5.5-0.484-7.078c-0.219-0.547-0.484-0.953-0.906-1.375s-0.828-0.688-1.375-0.906c-1.578-0.625-5.328-0.484-7.078-0.484zM24 14c0 1.656 0.016 3.297-0.078 4.953-0.094 1.922-0.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656 0.094-3.297 0.078-4.953 0.078s-3.297 0.016-4.953-0.078c-1.922-0.094-3.625-0.531-5.031-1.937s-1.844-3.109-1.937-5.031c-0.094-1.656-0.078-3.297-0.078-4.953s-0.016-3.297 0.078-4.953c0.094-1.922 0.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-0.094 3.297-0.078 4.953-0.078s3.297-0.016 4.953 0.078c1.922 0.094 3.625 0.531 5.031 1.937s1.844 3.109 1.937 5.031c0.094 1.656 0.078 3.297 0.078 4.953z"></path>
+                            </symbol>
+                            <symbol id="icon-youtube" viewBox="0 0 24 28">
+                                <path d="M15.172 19.437v3.297c0 0.703-0.203 1.047-0.609 1.047-0.234 0-0.469-0.109-0.703-0.344v-4.703c0.234-0.234 0.469-0.344 0.703-0.344 0.406 0 0.609 0.359 0.609 1.047zM20.453 19.453v0.719h-1.406v-0.719c0-0.703 0.234-1.062 0.703-1.062s0.703 0.359 0.703 1.062zM5.359 16.047h1.672v-1.469h-4.875v1.469h1.641v8.891h1.563v-8.891zM9.859 24.938h1.391v-7.719h-1.391v5.906c-0.313 0.438-0.609 0.656-0.891 0.656-0.187 0-0.297-0.109-0.328-0.328-0.016-0.047-0.016-0.219-0.016-0.547v-5.688h-1.391v6.109c0 0.547 0.047 0.906 0.125 1.141 0.125 0.391 0.453 0.578 0.906 0.578 0.5 0 1.031-0.313 1.594-0.953v0.844zM16.562 22.625v-3.078c0-0.719-0.031-1.234-0.141-1.547-0.172-0.578-0.562-0.875-1.109-0.875-0.516 0-1 0.281-1.453 0.844v-3.391h-1.391v10.359h1.391v-0.75c0.469 0.578 0.953 0.859 1.453 0.859 0.547 0 0.938-0.297 1.109-0.859 0.109-0.328 0.141-0.844 0.141-1.563zM21.844 22.469v-0.203h-1.422c0 0.562-0.016 0.875-0.031 0.953-0.078 0.375-0.281 0.562-0.625 0.562-0.484 0-0.719-0.359-0.719-1.078v-1.359h2.797v-1.609c0-0.828-0.141-1.422-0.422-1.813-0.406-0.531-0.953-0.797-1.656-0.797-0.719 0-1.266 0.266-1.672 0.797-0.297 0.391-0.438 0.984-0.438 1.813v2.703c0 0.828 0.156 1.437 0.453 1.813 0.406 0.531 0.953 0.797 1.687 0.797s1.313-0.281 1.687-0.828c0.172-0.25 0.297-0.531 0.328-0.844 0.031-0.141 0.031-0.453 0.031-0.906zM12.344 8.203v-3.281c0-0.719-0.203-1.078-0.672-1.078-0.453 0-0.672 0.359-0.672 1.078v3.281c0 0.719 0.219 1.094 0.672 1.094 0.469 0 0.672-0.375 0.672-1.094zM23.578 19.938c0 1.797-0.016 3.719-0.406 5.469-0.297 1.234-1.297 2.141-2.5 2.266-2.875 0.328-5.781 0.328-8.672 0.328s-5.797 0-8.672-0.328c-1.203-0.125-2.219-1.031-2.5-2.266-0.406-1.75-0.406-3.672-0.406-5.469v0c0-1.813 0.016-3.719 0.406-5.469 0.297-1.234 1.297-2.141 2.516-2.281 2.859-0.313 5.766-0.313 8.656-0.313s5.797 0 8.672 0.313c1.203 0.141 2.219 1.047 2.5 2.281 0.406 1.75 0.406 3.656 0.406 5.469zM7.984 0h1.594l-1.891 6.234v4.234h-1.563v-4.234c-0.141-0.766-0.453-1.859-0.953-3.313-0.344-0.969-0.688-1.953-1.016-2.922h1.656l1.109 4.109zM13.766 5.203v2.734c0 0.828-0.141 1.453-0.438 1.844-0.391 0.531-0.938 0.797-1.656 0.797-0.703 0-1.25-0.266-1.641-0.797-0.297-0.406-0.438-1.016-0.438-1.844v-2.734c0-0.828 0.141-1.437 0.438-1.828 0.391-0.531 0.938-0.797 1.641-0.797 0.719 0 1.266 0.266 1.656 0.797 0.297 0.391 0.438 1 0.438 1.828zM19 2.672v7.797h-1.422v-0.859c-0.562 0.656-1.094 0.969-1.609 0.969-0.453 0-0.781-0.187-0.922-0.578-0.078-0.234-0.125-0.609-0.125-1.172v-6.156h1.422v5.734c0 0.328 0 0.516 0.016 0.547 0.031 0.219 0.141 0.344 0.328 0.344 0.281 0 0.578-0.219 0.891-0.672v-5.953h1.422z"></path>
+                            </symbol>
+                            <symbol id="icon-dribbble" viewBox="0 0 24 28">
+                                <path d="M16 23.438c-0.156-0.906-0.75-4.031-2.188-7.781-0.016 0-0.047 0.016-0.063 0.016 0 0-6.078 2.125-8.047 6.406-0.094-0.078-0.234-0.172-0.234-0.172 1.781 1.453 4.047 2.344 6.531 2.344 1.422 0 2.766-0.297 4-0.812zM13.109 13.953c-0.25-0.578-0.531-1.156-0.828-1.734-5.281 1.578-10.344 1.453-10.516 1.453-0.016 0.109-0.016 0.219-0.016 0.328 0 2.625 1 5.031 2.625 6.844v0c2.797-4.984 8.328-6.766 8.328-6.766 0.141-0.047 0.281-0.078 0.406-0.125zM11.438 10.641c-1.781-3.156-3.672-5.719-3.813-5.906-2.859 1.344-4.984 3.984-5.656 7.156 0.266 0 4.547 0.047 9.469-1.25zM22.125 15.625c-0.219-0.063-3.078-0.969-6.391-0.453 1.344 3.703 1.891 6.719 2 7.328 2.297-1.547 3.922-4.016 4.391-6.875zM9.547 4.047c-0.016 0-0.016 0-0.031 0.016 0 0 0.016-0.016 0.031-0.016zM18.766 6.312c-1.797-1.594-4.172-2.562-6.766-2.562-0.828 0-1.641 0.109-2.422 0.297 0.156 0.203 2.094 2.75 3.844 5.969 3.859-1.437 5.313-3.656 5.344-3.703zM22.25 13.891c-0.031-2.422-0.891-4.656-2.328-6.406-0.031 0.031-1.672 2.406-5.719 4.062 0.234 0.484 0.469 0.984 0.688 1.484 0.078 0.172 0.141 0.359 0.219 0.531 3.531-0.453 7.016 0.313 7.141 0.328zM24 14c0 6.625-5.375 12-12 12s-12-5.375-12-12 5.375-12 12-12 12 5.375 12 12z"></path>
+                            </symbol>
+                            <symbol id="icon-behance" viewBox="0 0 32 28">
+                                <path d="M28.875 5.297h-7.984v1.937h7.984v-1.937zM24.938 11.953c-1.875 0-3.125 1.172-3.25 3.047h6.375c-0.172-1.891-1.156-3.047-3.125-3.047zM25.188 21.094c1.188 0 2.719-0.641 3.094-1.859h3.453c-1.062 3.266-3.266 4.797-6.672 4.797-4.5 0-7.297-3.047-7.297-7.484 0-4.281 2.953-7.547 7.297-7.547 4.469 0 6.937 3.516 6.937 7.734 0 0.25-0.016 0.5-0.031 0.734h-10.281c0 2.281 1.203 3.625 3.5 3.625zM4.328 20.312h4.625c1.766 0 3.203-0.625 3.203-2.609 0-2.016-1.203-2.812-3.109-2.812h-4.719v5.422zM4.328 11.922h4.391c1.547 0 2.641-0.672 2.641-2.344 0-1.813-1.406-2.25-2.969-2.25h-4.062v4.594zM0 3.969h9.281c3.375 0 6.297 0.953 6.297 4.875 0 1.984-0.922 3.266-2.688 4.109 2.422 0.688 3.594 2.516 3.594 4.984 0 4-3.359 5.719-6.937 5.719h-9.547v-19.688z"></path>
+                            </symbol>
+                        </defs>
+                    </svg>
+                    <li><a href="#" class="social__link"><svg class="icon icon-vk">
+                                <use xlink:href="#icon-vk"></use>
+                            </svg> </a></li>
+                    <li><a href="#" class="social__link"> <svg class="icon icon-instagram">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg></a></li>
+                    <li><a href="#" class="social__link"><svg class="icon icon-youtube">
+                                <use xlink:href="#icon-youtube"></use>
+                            </svg></a></li>
+                    <li><a href="#" class="social__link"> <svg class="icon icon-dribbble">
+                                <use xlink:href="#icon-dribbble"></use>
+                            </svg></a></li>
+                    <li><a href="#" class="social__link"> <svg class="icon icon-behance">
+                                <use xlink:href="#icon-behance"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="social__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente rem fuga harum at commodi amet, ea officiis reiciendis natus quidem eum odit, nulla quibusdam sed excepturi. Reiciendis, earum dignissimos.</div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span class="footer__copy-credits" id="credits"> © 2021 All Rights Reserved by CRE*8 </span>
+    </footer>
+    <script type="text/javascript" src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+</body>
+
+</html>
