@@ -1,11 +1,11 @@
 {
-  "name": "gulp-starter",
+  "name": "ewigkeit",
   "version": "1.0.0",
   "description": "Redesigned template for personal usage",
   "main": "index.js",
   "homepage": "https://hokkubit.github.io/ewigkeit",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "cre8arts",
   "license": "ISC",

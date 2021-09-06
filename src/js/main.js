@@ -67,7 +67,7 @@ $(() => {
 
         const init = () => {
             // Photo by Krzysztof Kotkowicz on Unsplash
-            mainBackground.css({ 'background': 'url(../images/default.jpg)', 'backgroundSize': 'cover' })
+            mainBackground.css({ 'background': 'url(https://hokkubit.github.io/ewigkeit/images/default.jpg)', 'backgroundSize': 'cover' })
             preloadImages();
             initRandomPattern();
             initEventsHandler();
