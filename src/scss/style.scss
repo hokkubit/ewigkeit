@@ -1,14 +1,13 @@
 @import "_vars.scss";
-@import "_vars.scss";
-@import "_libs.scss";
 @import "_fonts.scss";
-@import "_global.scss";
-@import "_media.scss";
 
 html,
 body {
     overflow-y: none;
     scrollbar-color: rgba(51, 51, 51, .5) rgba(119, 119, 119, .1);
+    @media screen and (max-width: 576px) {
+        overflow-x: hidden;
+    }
 }
 
 body {
@@ -16,6 +15,7 @@ body {
     color: #fff;
     width: 100%;
     height: 100vh;
+
 }
 
 
@@ -268,7 +268,7 @@ header h1 {
     }
 
     @media screen and (max-width: 576px) {
-        right: 10px;
+        left: 5px;
     }
 }
 
@@ -280,6 +280,7 @@ header h1 {
 
     @media screen and (max-width: 576px) {
         padding: 0;
+        padding-top: 15px;
         margin: 0;
     }
 
@@ -384,6 +385,7 @@ header h1 {
     @media screen and (max-width: 576px) {
         padding: 5px;
         margin: 0;
+        margin-left: 5px;
         width: 170px;
         min-height: 120px;
     }
@@ -452,6 +454,12 @@ header h1 {
     li {
         list-style: none;
     }
+
+
+    @media screen and (max-width: 576px) {
+        width: 70%;
+    }
+
 }
 
 
@@ -466,7 +474,7 @@ header h1 {
     line-height: 70px;
     text-align: center;
     display: inline-block;
-    margin: 12px 25px;
+    margin: 12px 45px;
     font-weight: 300;
     outline: none;
     position: relative;
@@ -475,6 +483,14 @@ header h1 {
     background-image: linear-gradient(to top, rgba(38, 38, 38, .7) 0, rgba(51, 51, 51, .5) 100%);
     box-shadow: 1px 1px 2px -2px rgba(255, 255, 255, 0.8) inset, -1px -1px 2px -2px rgba(255, 255, 255, 0.3) inset, 1px 1px 4px rgba(0, 0, 0, 0.3);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+    @media screen and (max-width: 576px) {
+        width: 50px;
+        height: 60px;
+        margin-bottom: 10px;
+        margin-left: -15px;
+        margin-right: 0;
+    }
 
     &:after {
         content: "";
@@ -551,19 +567,28 @@ figure.social__profile {
     text-align: center;
     opacity: 1;
 
+    @media screen and (max-width: 576px) {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+
     img {
         opacity: 1;
         max-width: 100%;
         border: 10px solid #000000;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
-        -webkit-transform: scale(0.95);
-        transform: scale(0.95);
         -webkit-transform-origin: 0 0;
         transform-origin: 0 0;
         border: 0.35rem solid;
         border-image: conic-gradient(from 180deg, $c1 0.5turn, $c2 0.6turn, $c1 0.35turn, $c2 0.25turn) 30;
         transition: border-image .5s linear;
+
+            @media screen and (max-width: 576px) {
+        -webkit-transform: scale(0.85);
+        transform: scale(0.85);
+    }
 
         &:hover {
             border-image: conic-gradient(from 90deg, $c2, $c1 0.1turn, $c1 0.35turn, $c2 0.25turn) 30;
@@ -584,6 +609,11 @@ figure.social__profile {
         box-shadow: 0 0px 10px -10px #000000;
         overflow: hidden;
         z-index: 1;
+
+        @media screen and (max-width: 576px) {
+            bottom: 90px;
+            right: 10%;
+        }
 
         &:hover {
             -webkit-transform: translateY(-8px);
@@ -607,18 +637,21 @@ figure.social__profile {
         }
 
         h2 {
-            font-weight: 400;
+            font-weight: 500;
             text-transform: uppercase;
+            font-family: $primary_font, sans-serif;
 
             span {
                 font-weight: 800;
+                color: #eee;
             }
         }
 
         p {
+            font-family: $primary_font, sans-serif;
             font-size: 0.9em;
             font-weight: 500;
-            opacity: 0.65;
+            color: #e5e5e5;
         }
 
         &:before {
@@ -647,6 +680,12 @@ figure.social__profile {
     stroke-width: 0;
     stroke: #fff;
     fill: #fff;
+
+
+    // @media screen and (max-width: 576px) {
+    //     width: 0.5em;
+    // }
+
 }
 
 .icon-vk {
@@ -665,8 +704,15 @@ figure.social__profile {
     margin-top: -180px;
     padding-left: 10px;
 
-    font-family: "Arial", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-family: $primary_font, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
     color: #fff;
+    text-shadow: 0px 3px 3px rgba(0,0,0, .5);
+
+     @media screen and (max-width: 576px) {
+      max-width: 250px;
+      font-weight: 600;
+      margin-top: -150px;
+    }
 }

@@ -193,10 +193,21 @@ $(() => {
         }
 
         const initRandomPattern = () => {
+
             for (let i = 0; i < 36; ++i) {
+
+                let t, l;
+                if (screen.width == 'default') {
+                    t = Math.floor(Math.random() * 500) + 5;
+                    l = Math.floor(Math.random() * 1200) + 5;
+                } else if (screen.width == 'Tablet') {
+                    t = Math.floor(Math.random() * 500) + 5;
+                    l = Math.floor(Math.random() * 800) + 5;
+                } else if (screen.width == 'Mobile') {
+                    t = Math.floor(Math.random() * 550) + 5;
+                    l = Math.floor(Math.random() * 380) + 5;
+                }
                 let opacity = 0.2,
-                    t = Math.floor(Math.random() * 500) + 5,
-                    l = Math.floor(Math.random() * 1200) + 5,
                     angle = Math.floor(Math.random() * 111) - 60;
 
                 let box = $('<div>').css({
@@ -217,19 +228,29 @@ $(() => {
 
         const disperse = () => {
             mosaicBoxes.children().each(function(i) {
+
+                let t, l;
+
+                if (screen.width == 'default') {
+                    t = Math.floor(Math.random() * 500) + 5;
+                    l = Math.floor(Math.random() * 1200) + 5;
+                } else if (screen.width == 'Tablet') {
+                    t = Math.floor(Math.random() * 500) + 5;
+                    l = Math.floor(Math.random() * 800) + 5;
+                } else if (screen.width == 'Mobile') {
+                    t = Math.floor(Math.random() * 550) + 5;
+                    l = Math.floor(Math.random() * 380) + 5;
+                }
                 let o = 0.2,
-                    top = Math.floor(Math.random() * 500) + 5, // between 5 and 200
-                    left = Math.floor(Math.random() * 1200) + 5, // between 5 and 700
-                    angle = Math.floor(Math.random() * 111) - 60, // between -50 and 50
-                    // skew = Math.floor(Math.random() * 50) - 25,
+                    angle = Math.floor(Math.random() * 111) - 60,
                     $el = $(this),
                     param = {
                         width: '30px',
                         height: '30px',
                         opacity: o,
                         zIndex: 11,
-                        top: top + 'px',
-                        left: left + 'px'
+                        top: t + 'px',
+                        left: l + 'px'
                     };
                 $el.animate(param, 400, 'swing', $el.css({ 'transform': 'rotate3d(1, 1, 1,' + angle + 'deg)' }));
 
@@ -239,16 +260,28 @@ $(() => {
         const disperseMenu = () => {
             mosaicBoxes.children().each(function(i) {
                 let $el = $(this);
+
+                let t,l;
+
+                 if (screen.width == 'default') {
+                    t = Math.floor(Math.random() * 100) + 300;
+                    l = Math.floor(Math.random() * 600) + 630;
+                } else if (screen.width == 'Tablet') {
+                    t = Math.floor(Math.random() * 500) + 5;
+                    l = Math.floor(Math.random() * 600) + 300;
+                } else if (screen.width == 'Mobile') {
+                    t = Math.floor(Math.random() * 550) + 5;
+                    l = Math.floor(Math.random() * 380) + 5;
+                }
+
                 let o = 0.1,
-                    top = Math.floor(Math.random() * 100) + 300,
-                    left = Math.floor(Math.random() * 600) + 630,
                     a = Math.floor(Math.random() * 101) - 50,
                     param = {
                         width: '30px',
                         height: '30px',
                         opacity: o,
-                        top: top + 'px',
-                        left: left + 'px'
+                        top: t + 'px',
+                        left: l + 'px'
                     };
 
                 $el.animate(param, 300, 'swing', $el.css({ 'transform': 'rotate(' + a + 'deg)' }));
@@ -270,8 +303,8 @@ $(() => {
                 let offsetY = el.offset().top;
                 if (!navMenu.data('open')) {
                     mosaicBoxes.children().fadeIn(300);
-                        // disperseMenu(offsetX, offsetY);
-                        // disperse();
+                    // disperseMenu(offsetX, offsetY);
+                    // disperse();
                 }
             });
 
@@ -399,7 +432,7 @@ $(() => {
                                 left: 20 + 100 * (i % 6),
                                 opacity: .3,
                             };
-                        } else if (screen.width == 'Mobile'){
+                        } else if (screen.width == 'Mobile') {
                             param = {
                                 width: '100px',
                                 height: '100px',
