@@ -205,7 +205,7 @@ $(() => {
                     l = Math.floor(Math.random() * 800) + 5;
                 } else if (screen.width == 'Mobile') {
                     t = Math.floor(Math.random() * 550) + 5;
-                    l = Math.floor(Math.random() * 380) + 5;
+                    l = Math.floor(Math.random() * 320) + 5;
                 }
                 let opacity = 0.2,
                     angle = Math.floor(Math.random() * 111) - 60;
@@ -239,7 +239,7 @@ $(() => {
                     l = Math.floor(Math.random() * 800) + 5;
                 } else if (screen.width == 'Mobile') {
                     t = Math.floor(Math.random() * 550) + 5;
-                    l = Math.floor(Math.random() * 380) + 5;
+                    l = Math.floor(Math.random() * 320) + 5;
                 }
                 let o = 0.2,
                     angle = Math.floor(Math.random() * 111) - 60,
@@ -271,7 +271,7 @@ $(() => {
                     l = Math.floor(Math.random() * 600) + 300;
                 } else if (screen.width == 'Mobile') {
                     t = Math.floor(Math.random() * 550) + 5;
-                    l = Math.floor(Math.random() * 380) + 5;
+                    l = Math.floor(Math.random() * 320) + 5;
                 }
 
                 let o = 0.1,
